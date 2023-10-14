@@ -1,0 +1,213 @@
+<section id="sidebar" [ngClass]="status ? 'hide' : ''">
+  <a href="#" class="brand">
+    
+    <span class="text" style="margin-top: 100px; margin-left: 60px;">Welcome, Molly</span>
+  </a>
+  <ul class="side-menu top">
+    <li class="active">
+      <a href="#">
+        <i class='bx bxs-dashboard' ></i>
+        <span class="text">Dashboard</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class='bx bxs-shopping-bag-alt' ></i>
+        <span class="text">My Store</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class='bx bxs-doughnut-chart' ></i>
+        <span class="text">Analytics</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class='bx bxs-message-dots' ></i>
+        <span class="text">Message</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class='bx bxs-group' ></i>
+        <span class="text">Team</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="#">
+        <i class='bx bxs-cog' ></i>
+        <span class="text">Settings</span>
+      </a>
+    </li>
+    <li>
+      <a href="#" class="logout">
+        <i class='bx bxs-log-out-circle' ></i>
+        <span class="text">Logout</span>
+      </a>
+    </li>
+  </ul>
+</section>
+<!-- SIDEBAR -->
+<!-- CONTENT -->
+<section id="content">
+  <!-- NAVBAR -->
+  <nav>
+    <i (click)="addToggle()" class='bx bx-menu' ></i>
+    <a href="#" class="nav-link">Categories</a>
+    <form action="#">
+      <div class="form-input">
+        <input type="search" placeholder="Search...">
+        <button type="button" class="search-btn"><i class='bx bx-search' ></i></button>
+      </div>
+    </form>
+    <a href="#" class="notification">
+      <i class='bx bxs-bell' ></i>
+      <span class="num">8</span>
+    </a>
+    <a href="#" class="profile">
+      <img src="https://icons-for-free.com/iconfiles/png/512/female+person+user+woman+young+icon-1320196266256009072.png">
+    </a>
+  </nav>
+  <!-- NAVBAR -->
+  <!-- MAIN -->
+  <main>
+    <div class="head-title">
+      <div class="left">
+        <h1>Dashboard</h1>
+        <ul class="breadcrumb">
+          <li>
+            <a href="#">Dashboard</a>
+          </li>
+          <li><i class='bx bx-chevron-right' ></i></li>
+          <li>
+            <a class="active" href="#">Home</a>
+          </li>
+        </ul>
+      </div>
+      <a href="#" class="btn-download">
+        <i class='bx bxs-cloud-download' ></i>
+        <span class="text">Download PDF</span>
+      </a>
+    </div>
+    <ul class="box-info">
+      <li>
+        <i class='bx bxs-calendar-check' ></i>
+        <span class="text">
+          <h3>1400</h3>
+          <p>New Order</p>
+        </span>
+      </li>
+      <li>
+        <i class='bx bxs-group' ></i>
+        <span class="text">
+          <h3>3648</h3>
+          <p>Visitors</p>
+        </span>
+      </li>
+      <li>
+        <i class='bx bxs-dollar-circle' ></i>
+        <span class="text">
+          <h3>$9671</h3>
+          <p>Total Sales</p>
+        </span>
+      </li>
+    </ul>
+    <div class="table-data">
+      <div class="order">
+        <div class="head">
+          <h3>Recent Orders</h3>
+          <i class='bx bx-search' ></i>
+          <i class='bx bx-filter' ></i>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>User</th>
+              <th>Date Order</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <img src="data:image/png;base64,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">
+                <p>John Brown</p>
+              </td>
+              <td>01-01-2023</td>
+              <td><span class="status completed">Completed</span></td>
+            </tr>
+            <tr>
+              <td>
+                <img src="https://icons-for-free.com/iconfiles/png/512/female+person+user+woman+young+icon-1320196266256009072.png">
+                <p>Emily Lopez</p>
+              </td>
+              <td>21-05-2023</td>
+              <td><span class="status pending">&nbsp;&nbsp;&nbsp; Pending&nbsp; &nbsp;&nbsp;</span></td>
+            </tr>
+            <tr>
+              <td>
+                <img src="https://icons-for-free.com/iconfiles/png/512/female+person+user+woman+young+icon-1320196266256009072.png">
+                <p>Molly Hooper</p>
+              </td>
+              <td>03-06-2023</td>
+              <td><span class="status process">Processing</span></td>
+            </tr>
+            <tr>
+              <td>
+                <img src="data:image/png;base64,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">
+                <p>Thomas Doe</p>
+              </td>
+              <td>12-07-2023</td>
+              <td><span class="status pending">&nbsp;&nbsp;&nbsp; Pending&nbsp; &nbsp;&nbsp;</span></td>
+            </tr>
+            <tr>
+              <td>
+                <img src="data:image/png;base64,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">
+                <p>Smith Murphy</p>
+              </td>
+              <td>31-08-2023</td>
+              <td><span class="status completed">Completed</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="todo">
+        <div class="head">
+          <h3>Todo List</h3>
+          <p style="color:rgb(179, 178, 178);">Add tasks to your Todo List</p>
+
+          <i class='bx bx-plus' ></i>
+          <i class='bx bx-filter' ></i>
+      
+        </div>
+
+        <ul class="todo-list">
+          <li class="completed">
+            <p>Todo Item 1</p>
+            <i class='bx bx-dots-vertical-rounded' ></i>
+          </li>
+          <li class="completed">
+            <p>Todo Item 2</p>
+            <i class='bx bx-dots-vertical-rounded' ></i>
+          </li>
+          <li class="completed">
+            <p>Todo Item 3</p>
+            <i class='bx bx-dots-vertical-rounded' ></i>
+          </li>
+          <li class="completed">
+            <p>Todo Item 4</p>
+            <i class='bx bx-dots-vertical-rounded' ></i>
+          </li>
+          <li class="completed">
+            <p>Todo Item 5</p>
+            <i class='bx bx-dots-vertical-rounded' ></i>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  <!-- MAIN -->
+</section>
+<!-- CONTENT -->
