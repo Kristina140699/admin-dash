@@ -1,0 +1,10 @@
+Create a new repo in the github
+Clone the repo in the local system
+Copy-Paste the created project(folder) into the cloned repo.
+Open VScode in the new repo and follow the commands
+
+git status
+git add .
+git commit -m "adding Admin Dashboard Project in Angular"
+git remote -v
+git push origin
